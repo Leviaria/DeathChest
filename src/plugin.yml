@@ -1,0 +1,31 @@
+name: DeathChest
+main: me.leviaria.deathchest.DeathChestPlugin
+version: 2.0.0-poseidon
+author: Leviaria
+description: Stores player drops in registered or emergency death chests for Poseidon Beta 1.7.3.
+softdepend: [WorldGuard, LWC]
+commands:
+  dc:
+    description: Shows DeathChest commands.
+    aliases: [deathchest]
+    usage: /dc
+  dcreload:
+    description: Reloads DeathChest.
+    usage: /dcreload
+  dcport:
+    description: Teleports to your DeathChest.
+    usage: /dcport
+  dcversion:
+    description: Shows the DeathChest version.
+    usage: /dcversion
+permissions:
+  deathchest.use:
+    default: true
+  deathchest.create:
+    default: true
+  deathchest.create.other:
+    default: op
+  deathchest.port:
+    default: true
+  deathchest.reload:
+    default: op
